@@ -78,7 +78,7 @@ def main(args, stdin):
 def generate_tweet_str(available_site_strings, first_line, user):
     tweet = "@{}!!! ".format(user)
     tweet += first_line.rstrip()
-    tweet += " tentemoji\n"
+    tweet += "tentemoji\n"
     tweet += "\n".join(available_site_strings)
     tweet += "\n" + "tentemoji" * random.randint(5, 20)  # To avoid duplicate tweets.
     return tweet

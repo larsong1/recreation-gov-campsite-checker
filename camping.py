@@ -214,6 +214,7 @@ def generate_human_output(
 ):
     out = []
     has_availabilities = False
+    
     for park_id, info in info_by_park_id.items():
         current, maximum, available_dates_by_site_id, park_name = info
         if current:
