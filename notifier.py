@@ -78,12 +78,12 @@ def main(args, stdin):
 def generate_tweet_str(available_site_strings, first_line, user):
     tweet = "@{}!!! ".format(user)
     tweet += first_line.rstrip()
-    tweet += " 🏕🏕🏕\n"
+    tweet += " tentemoji\n"
     tweet += "\n".join(available_site_strings)
-    tweet += "\n" + "🏕" * random.randint(5, 20)  # To avoid duplicate tweets.
+    tweet += "\n" + "tentemoji" * random.randint(5, 20)  # To avoid duplicate tweets.
     return tweet
 
-
+#🏕
 def generate_availability_strings(stdin):
     available_site_strings = []
     for line in stdin:
